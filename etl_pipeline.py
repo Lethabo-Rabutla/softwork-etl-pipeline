@@ -28,13 +28,6 @@ missing_values = data.isnull()
 print(missing_values.sum())
 
 # Step 3: Load the DataFrame into a PostgreSQL database
-# Database credentials
-db_username = 'postgres'
-db_password = 'Dora%401970%2E'
-db_host = 'localhost'
-db_port = '5432'
-db_name = 'postgres'
-
 # Create a connection string
 engine = create_engine(f'postgresql://{db_username}:{db_password}@{db_host}:{db_port}/{db_name}')
 print("Connection to PostgreSQL database established successfully.")
